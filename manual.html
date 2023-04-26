@@ -95,11 +95,11 @@
           </li>
           <li class="menu-has-children"><a href="">Manual</a>
             <ul>
-              <li><a href="manual.html">Introduccion</a></li>
+              <li><a href="manual.html">Introducción</a></li>
               <li><a href="manual_inicio.html">Inicio</a></li>
               <li><a href="manual_pp.html">Opciones de Pagina  Principal</a></li>
-              <li><a href="manual_periodos.html">Analisis Por Periodo</a></li>
-              <li><a href="manual.años.html">Analisis por Año</a></li>
+              <li><a href="manual_periodos.html">Análisis Por Periodo</a></li>
+              <li><a href="manual.años.html">Análisis por Año</a></li>
               <li><a href="manual.desc.html">Descargar</a></li>
             </ul>
           </li>
@@ -114,46 +114,51 @@
     ============================-->
     <section id="about">
       
-      <div class="container">
+      <div class="container f">
         <br>
         <div class="imagenTexto">
           <img src="img/manual/manual1.png" width="1000px" height="100px">
           <h1><strong>MANUAL</strong></h1>
         </div>
-        <br>
+        <br><br>
         <p>Hemos creado este manual de ANSESA para que puedas aprovechar al máximo sus funcionalidades. Si quieres acceder directamente a las visualizaciones da clic
-        <a class="enlace" href="">aqui</a> o selecciona alguna de las opciones en la pestaña superior en el menú superior, de lo contrario explora este manual que hemos preparado para ti.</p>
-        <!--- INDICE ---->
-        <p>Este manual está dividido en varias partes que recomendamos consultar en el orden que se mencionan dando clic sobre el título subrayado en el siguiente índice, esto los llevará la sección correspondiente de esta página. </p>
-         <aside>
-          <ol>
-            <li><a class="enlace" href="#introduccion">Intoducción</a></li>
-            <li><a class="enlace" href="manual_inicio.html">Inicio</a></li>
-            <li><a class="enlace" href="manual_pp.html">Opciones de Pagina  Principal</a></li>
-            <li><a class="enlace" href="manual_periodos.html">Analisis Por Periodo</a></li>
-            <li><a class="enlace" href="manual.años.html">Analisis por Año</a></li>
-            <li><a class="enlace" href="manual.desc.html">Descargar</a></li>
-          </ol>
-        </aside>
-      
-        <div class="separador">
+            <a class="enlace" href="">aqui</a> o selecciona alguna de las opciones en la pestaña superior en el menú superior, de lo contrario explora este manual que hemos preparado para ti
+            <br><br>
+            Este manual está dividido en varias partes que recomendamos consultar en el orden que se mencionan dando clic sobre el título subrayado en el siguiente índice, esto los llevará la sección correspondiente de esta página
+            <div><img class="aparecer" width="25%" style="position: absolute; top: 19%; right: 10%;" src="img/manual/manual.png"> </div>
+          <aside>
+            <ol style="font-size: 25px; transform: translate(10%);">
+              <li><a class="enlace" href="#introduccion">Intoducción</a></li>
+              <li><a class="enlace" href="manual_inicio.html">Inicio</a></li>
+              <li><a class="enlace" href="manual_pp.html">Opciones de Pagina  Principal</a></li>
+              <li><a class="enlace" href="manual_periodos.html">Analisis Por Periodo</a></li>
+              <li><a class="enlace" href="manual.años.html">Analisis por Año</a></li>
+              <li><a class="enlace" href="manual.desc.html">Descargar</a></li>
+            </ol>
+          </aside>
+        </p>
+        
+        <br><br><br>
+        <div class="separador aparecer">
           <h1 id="introduccion">Introducción</h1>
         </div>
-          <br>
-          <h2>¿Que es ANSESA?
+        <br><br><br><br>
+
+          <div class="animar"><h2>¿Qué es ANSESA?
             <div class="linea"></div>
-          </h2>
-          <p>A través de este documento se describirá la página web donde se presentará el Análisis Histórico de Servicios de Salud. Este análisis se hizo con la ayuda de:
+            </h2>
+          </div>
+          <p class="animar" >A través de este documento se describirá la página web donde se presentará el Análisis Histórico de Servicios de Salud. Este análisis se hizo con la ayuda de:
             <br><br>1.	Los datos abiertos correspondientes a egresos hospitalarios, publicados por la Secretaría de Salud. <a class="enlace" href="http://www.dgis.salud.gob.mx/contenidos/basesdedatos/da_egresoshosp_gobmx.html"> clik aqui</a>
             <br>2.	La Clasificación Internacional de Enfermedades en su Decima revisión (CIE-10), publicada por la organización mundial de la Salud (OMS) <a class="enlace" href="https://icd.who.int/browse10/2010/en">CIE</a>
             <br>3.	Catálogo de los establecimientos de salud (CLUES). Publicada por la Dirección General de Información de la Salud (DGIS) <a class="enlace" href="http://www.dgis.salud.gob.mx/contenidos/intercambio/clues_gobmx.html">DGIS</a>
             <br><br>El análisis se desarrolla por medio de visualizaciones con la versión académica de  <a class="enlace" href="https://www.tableau.com/">Tableu</a>, visualizaciones que facilitan la comprensión de la información, buscando revisar el comportamiento temporal y de frecuencia de las categorías en que se clasifican las enfermedades, su afectación a personas que carecen de un servicio de salud formal por estado y a nivel nacional, entre otros patrones.
           </p>
-          <div class="animar">
-          <h2>Preparación de datos para ANSESA
+          <br><br><br><br>
+          <div class="animar"><h2>Preparación de datos para ANSESA
             <div class="linea"></div>
           </h2>
-          <p>La preparación de los datos abiertos de servicios de salud, sigue el siguiente flujo:
+          <p class="animar">La preparación de los datos abiertos de servicios de salud, sigue el siguiente flujo:
             <br><br>1.	Extracción de un año de servicios de salud a un archivo de tipo csv de la <a class="enlace" href=" http://www.dgis.salud.gob.mx/contenidos/basesdedatos/Datos_Abiertos.html"> Base de Datos abiertos de la DGIS</a>
             <br>2.	Limpieza con programa en python 
             <br>3.	Creación de tabla para poblar en MySQL 
@@ -165,8 +170,10 @@
             <br><br>
           </p>   
           </div>
+          <br><br><br><br>
       </div>    
     </section><!-- #about -->
+    <br>
     <!--==========================
       Contact Section
     ============================-->

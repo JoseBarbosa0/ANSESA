@@ -1,4 +1,9 @@
 
+.f p{
+    font-size: large; 
+    text-align: justify;
+    color:#0d0e0d;
+}
 /*Selector para crear imagenes con texto */
 .imagenTexto{ 
     position:relative;
@@ -22,8 +27,10 @@
     opacity: 0.7;
     filter: brightness(50%);
     border-radius: 10px;
+    box-shadow: 10px 10px 15px grey;
 }
 
+/* Estilo del separador  */
 .separador{
     height: 70px;
     background-color: #002b09; /*color de fondo de la barra*/
@@ -31,33 +38,53 @@
     padding: 10px; /*espacio alrededor del texto dentro de la barra*/
     text-align: center;
     border-radius: 25px;
+    box-shadow: 10px 10px 15px grey;
 }
 
+/* Estilo del separador de linea */
 .linea {
     border-top: 3px solid rgba(47, 68, 37, 0.973);
     width: 100%;
 }
 
+/* Fuente de los enlaces  */
 .enlace {
     color: rgb(0, 128, 53);
 }
 
+/* Centra los elementos de un div */
 .estetica-img {
     text-align:center;
 }
 
+/* estilo de las imagenes que se insertan */
 .estetica-img img{
     border: 1px solid rgb(99, 99, 99);
     border-radius: 25px;
     box-shadow: 10px 10px 15px grey;
 }
 
-@keyframes animacion {
-    from { transform: translateY(100%); }
-    to   { transform: translateY(0); }
-  }
-
+/* Aparece elementos conforme avanza la pagina */
 .animar {
     transform: translateY(100%);
     transition: transform 1s ease-in-out;
+    
+  }
+
+/* Aparece elemntos al instante */
+.aparecer{
+    animation-name: animacion;
+    animation-duration: 1.5s;
+}
+  @keyframes animacion {
+    from {transform: translateY(100%);}
+    to {transform: translateY(0%);}
+  }
+
+  .columna {
+    position: relative;
+    top: 70px;
+    left: 70px;
+    width: 40%;
+    font-size: 20px;
   }
